@@ -1,0 +1,16 @@
+:root { --accent: #ec4899; --accent-soft: #fde7f2; --bg: #fdf7fa; }
+.hero { text-align: center; padding: 8px 0 0; }
+.soft { background: linear-gradient(transparent 55%, #ffd1e6 55%); border-radius: 4px; }
+.ex { gap: 6px; }
+.chip.small { font-size: 13px; padding: 5px 10px; }
+.results { display: grid; gap: 10px; }
+.res { padding: 14px 16px; animation: in .25s ease; }
+.rt { font-size: 17px; line-height: 1.6; margin-bottom: 6px; }
+.btn.small { min-height: 34px; padding: 4px 12px; font-size: 14px; }
+@keyframes in { from { transform: translateY(6px); opacity: 0; } to { transform: none; opacity: 1; } }
+.phr { margin-top: 8px; gap: 6px; }
+.ba { text-align: center; background: linear-gradient(170deg, #fff, #ffeef6); padding: 26px 20px; }
+.lab { font-size: 13px; color: var(--muted); }
+.before { font-size: 20px; font-weight: 700; color: #8a8a96; text-decoration: line-through; text-decoration-color: #ff8fbf; margin: 6px 0 14px; }
+.arrow { font-size: 14px; color: var(--accent); font-weight: 700; margin-bottom: 14px; }
+.after { font-size: 21px; font-weight: 800; line-height: 1.55; margin-bottom: 16px; }
