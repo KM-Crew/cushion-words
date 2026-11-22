@@ -163,14 +163,14 @@ Router.on('/', root => {
     <section class="stack">
       <div class="hero"><h1>그 말,<br>조금만 <span class="soft">말랑하게</span></h1>
       <p class="muted">하고 싶은 말을 그대로 적으면, 받는 사람에 맞는 부드러운 말투로 바꿔 드려요.</p></div>
-      <div class="card stack">
+      <div class="split"><div class="card stack sticky">
         <textarea id="in" rows="2" maxlength="80" placeholder="예) 보고서 내일까지 내"></textarea>
         <div class="row ex">${EXAMPLES.map(([e]) => `<button class="chip small" data-ex="${esc(e)}">${esc(e)}</button>`).join('')}</div>
         <div><label class="field">받는 사람</label><div class="row" id="tg">${TARGETS.map(t => `<button class="chip ${st.target === t.id ? 'on' : ''}" data-t="${t.id}">${t.name}</button>`).join('')}</div></div>
         <div><label class="field">상황</label><div class="row" id="si"><button class="chip ${st.sit === 'auto' ? 'on' : ''}" data-s="auto">자동</button>${SITUATIONS.map(s => `<button class="chip ${st.sit === s.id ? 'on' : ''}" data-s="${s.id}">${s.name}</button>`).join('')}</div></div>
         <div><label class="field">정중도 <b id="lv">${LEVELS[st.level]}</b></label><input type="range" id="lvl" min="0" max="4" value="${st.level}"><div class="row small muted"><span>담백</span><span class="grow"></span><span>황송 🙇</span></div></div>
       </div>
-      <div id="out" class="results"></div>
+      <div id="out" class="results"></div></div>
     </section>`));
   const inp = $('#in');
   inp.value = store.sget('cw-input', '');
