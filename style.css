@@ -18,4 +18,16 @@
 /* ---------- PC 화면 ---------- */
 .pc .hero { margin-bottom: 10px; }
 .pc .rt { font-size: 18px; }
-.pc body[data-page=templates] main, .pc body[data-page=share] main { max-width: 760px; }
+.pc body[data-page=share] main { max-width: 760px; }
+.pc body[data-page=templates] main { max-width: 1040px; }
+
+
+/* ---------- S7: 톤·상황 모음 ---------- */
+.rt, .after.mail { white-space: pre-line; }
+.res.mail .rt { font-size: 15.5px; line-height: 1.7; }
+.after.mail { font-size: 16px; font-weight: 600; text-align: left; }
+.dice { border-style: dashed; }
+.tabs { gap: 6px; }
+.tgrid { display: grid; gap: 12px; }
+.tcat .btn.small { font-size: 13px; }
+.pc .tgrid { grid-template-columns: 1fr 1fr; }
